@@ -1,13 +1,13 @@
 package com.huntercodexs.pdf.processor.template.setting.box;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
+@Setter
+@Getter
 public class BoxDataContent {
     public int data;
 
-    public int getData() {
-        return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
-    }
 }

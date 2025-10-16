@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum TableDimensionsToJEasyPdf {
     TABLE_5X6(5, 6),
     TABLE_5X5(5, 5),
@@ -31,14 +34,6 @@ public enum TableDimensionsToJEasyPdf {
     TableDimensionsToJEasyPdf(int tableLines, int tableColumns) {
         this.tableLines = tableLines;
         this.tableColumns = tableColumns;
-    }
-
-    public int getTableLines() {
-        return tableLines;
-    }
-
-    public int getTableColumns() {
-        return tableColumns;
     }
 
     public static int[] tableSize(TableDimensionsToJEasyPdf template) {

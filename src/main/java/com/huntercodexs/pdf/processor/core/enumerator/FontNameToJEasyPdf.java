@@ -1,7 +1,9 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
+@Getter
 public enum FontNameToJEasyPdf {
     ZAP(PDType1Font.ZAPF_DINGBATS),
     SYMBOL(PDType1Font.SYMBOL),
@@ -25,10 +27,6 @@ public enum FontNameToJEasyPdf {
 
     FontNameToJEasyPdf(PDType1Font fontName) {
         this.fontName = fontName;
-    }
-
-    public PDType1Font getFontName() {
-        return fontName;
     }
 
     public static PDType1Font fontName(FontNameToJEasyPdf fontName) {

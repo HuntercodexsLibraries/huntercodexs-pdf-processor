@@ -1,7 +1,9 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
+@Getter
 public enum PageSizeToJEasyPdf {
     A4_LAYOUT(PDRectangle.A4),
     LETTER_LAYOUT(PDRectangle.LETTER),
@@ -22,10 +24,6 @@ public enum PageSizeToJEasyPdf {
 
     PageSizeToJEasyPdf(PDRectangle pageSize) {
         this.pageSize = pageSize;
-    }
-
-    public PDRectangle getPageSize() {
-        return pageSize;
     }
 
     public static PDRectangle pageSize(PageSizeToJEasyPdf pageSize) {

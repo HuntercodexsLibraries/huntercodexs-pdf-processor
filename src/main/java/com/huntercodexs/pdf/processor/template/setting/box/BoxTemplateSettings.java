@@ -1,7 +1,13 @@
 package com.huntercodexs.pdf.processor.template.setting.box;
 
 import com.huntercodexs.pdf.processor.core.enumerator.ColorsToJEasyPdf;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+@Data
+@Setter
+@Getter
 public class BoxTemplateSettings {
     //General
     public int boxQuantity;
@@ -17,59 +23,4 @@ public class BoxTemplateSettings {
     public static final int BOX_DEFAULT_WIDTH = 286;
     public static final int BOX_DEFAULT_HEIGHT = 135;
 
-    public int getBoxQuantity() {
-        return boxQuantity;
-    }
-
-    public void setBoxQuantity(int boxQuantity) {
-        this.boxQuantity = boxQuantity;
-    }
-
-    public boolean isTemplateTitleEnabled() {
-        return templateTitleEnabled;
-    }
-
-    public void setTemplateTitleEnabled(boolean templateTitleEnabled) {
-        this.templateTitleEnabled = templateTitleEnabled;
-    }
-
-    public int[] getBoxWidth() {
-        return boxWidth;
-    }
-
-    public void setBoxWidth(int[] boxWidth) {
-        this.boxWidth = boxWidth;
-    }
-
-    public int[] getBoxAdjustOffsetX() {
-        return boxAdjustOffsetX;
-    }
-
-    public void setBoxAdjustOffsetX(int[] boxAdjustOffsetX) {
-        this.boxAdjustOffsetX = boxAdjustOffsetX;
-    }
-
-    public int[] getBoxAdjustOffsetY() {
-        return boxAdjustOffsetY;
-    }
-
-    public void setBoxAdjustOffsetY(int[] boxAdjustOffsetY) {
-        this.boxAdjustOffsetY = boxAdjustOffsetY;
-    }
-
-    public boolean[] getBoxBorderEnabled() {
-        return boxBorderEnabled;
-    }
-
-    public void setBoxBorderEnabled(boolean[] boxBorderEnabled) {
-        this.boxBorderEnabled = boxBorderEnabled;
-    }
-
-    public ColorsToJEasyPdf[] getBoxBackColor() {
-        return boxBackColor;
-    }
-
-    public void setBoxBackColor(ColorsToJEasyPdf[] boxBackColor) {
-        this.boxBackColor = boxBackColor;
-    }
 }

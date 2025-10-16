@@ -9,7 +9,6 @@ import com.huntercodexs.pdf.processor.template.setting.JEasyPdfTemplateSettings;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 
-import static com.huntercodexs.pdf.processor.core.JEasyPdfCore.*;
 import static com.huntercodexs.pdf.processor.core.dto.JEasyPdfPage.OFFSET_Y_ADJUST_A4;
 import static com.huntercodexs.pdf.processor.template.setting.boxopen.BoxOpenTemplateSettings.*;
 import static com.huntercodexs.pdf.processor.template.setting.slimbox.SlimBoxTemplateSettings.SLIM_BOX_DEFAULT_WIDTH;

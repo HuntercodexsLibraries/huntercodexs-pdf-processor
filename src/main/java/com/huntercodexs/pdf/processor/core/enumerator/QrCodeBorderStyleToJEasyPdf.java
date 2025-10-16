@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum QrCodeBorderStyleToJEasyPdf {
     BORDERED("BORDERED"),
     BORDERLESS("BORDERLESS"),
@@ -9,10 +12,6 @@ public enum QrCodeBorderStyleToJEasyPdf {
 
     QrCodeBorderStyleToJEasyPdf(String borderStyle) {
         this.borderStyle = borderStyle;
-    }
-
-    public String getBorderStyle() {
-        return borderStyle;
     }
 
     public static String qrCodeBorderStyle(QrCodeBorderStyleToJEasyPdf borderStyle) {

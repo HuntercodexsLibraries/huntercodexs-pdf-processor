@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum FontSizeToJEasyPdf {
     X_SMALL(5),
     M_SMALL(7),
@@ -15,10 +18,6 @@ public enum FontSizeToJEasyPdf {
 
     FontSizeToJEasyPdf(int fontSize) {
         this.fontSize = fontSize;
-    }
-
-    public int getFontSize() {
-        return fontSize;
     }
 
     public static int fontSize(FontSizeToJEasyPdf fontSize) {

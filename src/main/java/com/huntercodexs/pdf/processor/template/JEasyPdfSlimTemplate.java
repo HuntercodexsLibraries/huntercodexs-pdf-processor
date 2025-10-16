@@ -16,7 +16,6 @@ import org.krysalis.barcode4j.HumanReadablePlacement;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.huntercodexs.pdf.processor.core.JEasyPdfCore.*;
 import static com.huntercodexs.pdf.processor.core.dto.JEasyPdfPage.OFFSET_Y_ADJUST_A4;
 import static com.huntercodexs.pdf.processor.core.dto.JEasyPdfPage.WIDTH_ADJUST_A4;
 import static com.huntercodexs.pdf.processor.template.setting.slim.SlimTemplateSettings.*;

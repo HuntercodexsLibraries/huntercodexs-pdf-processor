@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum ProtectionLevelToJEasyPdf {
     LOW(64),
     MIDDLE(128),
@@ -9,10 +12,6 @@ public enum ProtectionLevelToJEasyPdf {
 
     ProtectionLevelToJEasyPdf(int protectionLevel) {
         this.protectionLevel = protectionLevel;
-    }
-
-    public int getProtectionLevel() {
-        return protectionLevel;
     }
 
     public static int protectionLevel(ProtectionLevelToJEasyPdf protectionLevel) {

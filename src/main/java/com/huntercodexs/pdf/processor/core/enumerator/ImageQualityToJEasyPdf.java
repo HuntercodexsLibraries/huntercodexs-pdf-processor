@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum ImageQualityToJEasyPdf {
     LOW(50),
     NORMAL(120),
@@ -11,10 +14,6 @@ public enum ImageQualityToJEasyPdf {
 
     ImageQualityToJEasyPdf(int imageQuality) {
         this.imageQuality = imageQuality;
-    }
-
-    public int getImageQuality() {
-        return imageQuality;
     }
 
     public static int imageQuality(ImageQualityToJEasyPdf imageQuality) {

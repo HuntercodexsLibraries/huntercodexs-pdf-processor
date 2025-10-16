@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum JEasyPdfTemplates {
     SLIM("SLIM"),
     BOX("BOX"),
@@ -14,10 +17,6 @@ public enum JEasyPdfTemplates {
 
     JEasyPdfTemplates(String template) {
         this.template = template;
-    }
-
-    public String getTemplate() {
-        return template;
     }
 
     public static String template(JEasyPdfTemplates template) {

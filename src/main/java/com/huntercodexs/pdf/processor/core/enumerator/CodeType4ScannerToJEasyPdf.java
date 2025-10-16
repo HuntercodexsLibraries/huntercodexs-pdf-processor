@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum CodeType4ScannerToJEasyPdf {
     CODE128("CODE128"),
     CODE39("CODE39"),
@@ -10,10 +13,6 @@ public enum CodeType4ScannerToJEasyPdf {
 
     CodeType4ScannerToJEasyPdf(String codeType) {
         this.codeType4Scanner = codeType;
-    }
-
-    public String getCodeType4Scanner() {
-        return codeType4Scanner;
     }
 
     public static String codeType4Scanner(CodeType4ScannerToJEasyPdf codeType) {

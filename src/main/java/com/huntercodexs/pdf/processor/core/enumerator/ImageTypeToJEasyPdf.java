@@ -1,5 +1,8 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
+@Getter
 public enum ImageTypeToJEasyPdf {
     JPEG("JPEG"),
     JPG("JPEG"),
@@ -12,10 +15,6 @@ public enum ImageTypeToJEasyPdf {
 
     ImageTypeToJEasyPdf(String imageType) {
         this.imageType = imageType;
-    }
-
-    public String getImageType() {
-        return imageType;
     }
 
     public static String imageType(ImageTypeToJEasyPdf imageType) {

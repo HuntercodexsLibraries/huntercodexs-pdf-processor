@@ -1,7 +1,10 @@
 package com.huntercodexs.pdf.processor.core.enumerator;
 
+import lombok.Getter;
+
 import java.awt.*;
 
+@Getter
 public enum ColorsToJEasyPdf {
     NONE(new Color(255, 255, 255, 0)),
     BLACK(new Color(0, 0, 0)),
@@ -33,10 +36,6 @@ public enum ColorsToJEasyPdf {
 
     ColorsToJEasyPdf(Color colorName) {
         this.colorName = colorName;
-    }
-
-    public Color getColorName() {
-        return colorName;
     }
 
     public static Color color(ColorsToJEasyPdf colorName) {
